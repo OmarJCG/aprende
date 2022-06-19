@@ -5,6 +5,30 @@
 body{
     background-color: #f2f2f2;
 }
+.nav{
+    display: flex;
+    width: 100%;
+    /* max-width:00PX; */
+    justify-content: space-around;
+    background-color: darkviolet;
+    height: 50px;
+    align-items: center; 
+    padding-bottom: 5px;
+}
+.nav__item{
+    width: 90px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    padding:10px 10px 5px;
+    border-bottom:2px solid #fff;
+}
+.nav__item:hover{
+    background-color: rgb(160, 72, 197);
+    border: none;
+    border-radius: 20px;
+}
 .o{
     
     font-size: 1.6rem;
