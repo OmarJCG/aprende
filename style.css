@@ -55,6 +55,8 @@ body{
 }
 .item__img{
     border-radius:5px 5px 0 0;
+    height: 174px;
+    object-fit: cover;
 }
 .item__link{
     display: inline-block;
