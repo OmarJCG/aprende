@@ -29,18 +29,24 @@ body{
     border: none;
     border-radius: 20px;
 }
-.o{
-    
-    font-size: 1.6rem;
+.title{
+    width: 100%;
     text-align: center;
-    padding-top:20px;  
-
+    margin: 20px 0 0px;
+}
+.o{
+    display: inline;
+    width: 100%;
+    font-size: 1.6rem;
+    border-right:2px solid #000;
+    letter-spacing: 3px;
+    
 }
 .container{
     padding:20px 40px;
     display: flex;
-    
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .item{
     width: 250px;

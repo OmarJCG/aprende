@@ -1,11 +1,16 @@
-const pesteNegra = document.querySelector(".item__link");
-const title = document.querySelector(".title");
-const nav = document.querySelector(".nav");
-const img = document.querySelector(".item__img");
-console.log(pesteNegra,title)
+const o = document.querySelector(".o");
 
-img.addEventListener("click",(e)=>{
-    
-
-})
-
+const typeWrite =(texto,tiempo=200,etiqueta)=>{
+    let arrayCaracter = texto.split('');
+    etiqueta.innerHTML="";
+    let cont=0;
+    let efecWrite = setInterval(function(){
+        etiqueta.innerHTML += arrayCaracter[cont];
+        cont++;
+        if(cont=== arrayCaracter.length){
+            clearInterval(efecWrite)
+            etiqueta.style.border="none"
+        }
+    },tiempo);
+};
+typeWrite("TEMAS PARA VER",200,o);
